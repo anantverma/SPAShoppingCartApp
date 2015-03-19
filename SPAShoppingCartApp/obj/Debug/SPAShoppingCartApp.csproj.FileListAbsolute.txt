@@ -79,3 +79,7 @@ E:\Codes\POC\SPAShoppingCartApp\SPAShoppingCartApp\bin\zh-Hant\System.Spatial.re
 E:\Codes\POC\SPAShoppingCartApp\SPAShoppingCartApp\obj\Debug\SPAShoppingCartApp.csprojResolveAssemblyReference.cache
 E:\Codes\POC\SPAShoppingCartApp\SPAShoppingCartApp\obj\Debug\SPAShoppingCartApp.dll
 E:\Codes\POC\SPAShoppingCartApp\SPAShoppingCartApp\obj\Debug\SPAShoppingCartApp.pdb
+E:\Codes\POC\SPAShoppingCartApp\SPAShoppingCartApp\bin\aspnet-SPAShoppingCartApp-20150317212115.mdf
+E:\Codes\POC\SPAShoppingCartApp\SPAShoppingCartApp\bin\aspnet-SPAShoppingCartApp-20150317212115_log.ldf
+E:\Codes\POC\SPAShoppingCartApp\SPAShoppingCartApp\bin\ShoppingCartEntities.dll
+E:\Codes\POC\SPAShoppingCartApp\SPAShoppingCartApp\bin\ShoppingCartEntities.pdb

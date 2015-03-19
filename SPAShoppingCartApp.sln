@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPAShoppingCartApp", "SPAShoppingCartApp\SPAShoppingCartApp.csproj", "{2ABB4AD9-0D68-4A14-9DEA-1E7A7839A166}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartEntities", "ShoppingCartEntities\ShoppingCartEntities.csproj", "{220A4105-A8C2-4547-A367-50E73160BFC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{2ABB4AD9-0D68-4A14-9DEA-1E7A7839A166}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ABB4AD9-0D68-4A14-9DEA-1E7A7839A166}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ABB4AD9-0D68-4A14-9DEA-1E7A7839A166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220A4105-A8C2-4547-A367-50E73160BFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220A4105-A8C2-4547-A367-50E73160BFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220A4105-A8C2-4547-A367-50E73160BFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220A4105-A8C2-4547-A367-50E73160BFC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

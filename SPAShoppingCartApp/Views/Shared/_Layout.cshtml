@@ -13,7 +13,12 @@
     <div id="userSettings">
         @Html.Partial("_UserSettings")
     </div>
-
+    <div id="menu">
+        @Html.Partial("~/Views/Shared/_Menu.cshtml")
+    </div>
+    <div id="search">
+        @{Html.RenderAction("Search", "Search", new { area = "Search" });}
+    </div>
     <div id="body">
         @RenderBody()
     </div>

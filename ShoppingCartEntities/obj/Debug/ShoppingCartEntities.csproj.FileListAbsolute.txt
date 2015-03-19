@@ -1,0 +1,10 @@
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\bin\Debug\aspnet-SPAShoppingCartApp-20150317212115.mdf
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\bin\Debug\aspnet-SPAShoppingCartApp-20150317212115_log.ldf
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\bin\Debug\ShoppingCartEntities.dll.config
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\bin\Debug\ShoppingCartEntities.dll
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\bin\Debug\ShoppingCartEntities.pdb
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\bin\Debug\EntityFramework.dll
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\bin\Debug\EntityFramework.xml
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\obj\Debug\ShoppingCartEntities.csprojResolveAssemblyReference.cache
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\obj\Debug\ShoppingCartEntities.dll
+E:\Codes\POC\SPAShoppingCartApp\ShoppingCartEntities\obj\Debug\ShoppingCartEntities.pdb

@@ -48,8 +48,21 @@ header {
     #userSettings form {
         display: inline;
     }
+#body {
+    float:left;
+}
+
+#search {
+    float:left;
+}
+
+#search input, select {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 1.0em;
+}
 
 #menu {
+    float: left;
     list-style-type: none;
     padding: 0;
 }

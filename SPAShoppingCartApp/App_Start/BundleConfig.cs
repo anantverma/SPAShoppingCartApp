@@ -37,7 +37,8 @@ namespace SPAShoppingCartApp
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/Site.css",
-                "~/Content/TodoList.css"));
+                "~/Content/TodoList.css",
+                "~/Content/Cart.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

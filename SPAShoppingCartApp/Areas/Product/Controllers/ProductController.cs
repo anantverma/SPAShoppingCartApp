@@ -13,5 +13,10 @@ namespace SPAShoppingCartApp.Areas.Product.Controllers
             return View();
         }
 
+        public SPAShoppingCartApp.Areas.Product.Models.Product Product(int productId)
+        {
+            return new Models.Product { CategoryId = 1, ProductId = 1, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null };
+        }
+
     }
 }

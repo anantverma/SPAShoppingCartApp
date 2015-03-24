@@ -301,7 +301,11 @@
     <Content Include="Areas\ShoppingCart\Views\ShoppingCart\Cart.cshtml" />
     <Content Include="Areas\Search\Views\Web.config" />
     <Content Include="Areas\Search\Views\Search\_Search.cshtml" />
+    <Content Include="Areas\Product\Views\Product\GetProducts.cshtml" />
+    <Content Include="Areas\Product\Views\Product\ProductDetails.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\quantarrowd.png" />
+    <Content Include="Images\quantarrowu.png" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

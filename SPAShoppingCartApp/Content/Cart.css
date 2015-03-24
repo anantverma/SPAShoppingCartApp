@@ -58,3 +58,37 @@ td.checkout {
   width: 100%;
   text-align: right;
 }
+
+/* Product List css*/
+
+.eStore-productlist {
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  float:left;
+  width:100%;
+}
+
+.eStore-productlist-product-thumbnail {
+    float:left;
+}
+
+.eStore-productlist-product-description {
+  text-align: left;
+  margin-left: 150px;
+}
+
+.eStore-product-name {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+/* Product Details css begins  */
+
+#product-details input {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 1.0em;
+}

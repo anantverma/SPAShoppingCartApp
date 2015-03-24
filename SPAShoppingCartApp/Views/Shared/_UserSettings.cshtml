@@ -2,8 +2,12 @@
 {
     <text>
     Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: new { area = "" }, htmlAttributes: new { @class = "username", title = "Manage" })
-    @Html.ActionLink("Cart()", "Cart", "ShoppingCart", routeValues: new { area = "ShoppingCart" }, htmlAttributes: new { @class = "username", title = "Cart" })
-
+    </text>
+}
+@Html.ActionLink("Cart(0)", "Cart", "ShoppingCart", routeValues: new { area = "ShoppingCart" }, htmlAttributes: new { @class = "username", title = "Cart" })
+@if (Request.IsAuthenticated)
+{
+    <text>
     @using (Html.BeginForm("LogOff", "Account", new { area = "" }, FormMethod.Post, new { id = "logoutForm" }))
     {
         @Html.AntiForgeryToken()

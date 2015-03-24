@@ -4,14 +4,15 @@
                    new { LinkText="Dashboard", ActionName="Index",ControllerName="Admin",Roles="Administrator"  },
                    new { LinkText="Administration", ActionName="GetUsers",ControllerName="Admin",Roles="Administrator"  },
                    new { LinkText="My Profile", ActionName="GetDealerInfo",ControllerName="Dealer",Roles="Dealer,PublicUser"  },
-                   new { LinkText="Products", ActionName="GetProducts",ControllerName="Product",Roles="Dealer,Administrator"  },
-                   new { LinkText="Search", ActionName="SearchProducts",ControllerName="Product",Roles="PublicUser,Dealer,Administrator"  },
                    new { LinkText="Purchase History", ActionName="GetHistory",ControllerName="Product",Roles="PublicUser"  }
                     
                 };
 }
 
 <ul id="menu">
+    <li> @Html.ActionLink("Products", "GetProducts", "Product" , routeValues: new { area = "Product" } , htmlAttributes: new { @class = "username", title = "Cart" })</li>
+   <li> @Html.ActionLink("Search", "SearchProducts", "Product")</li>
+
     @if (HttpContext.Current.User.Identity.IsAuthenticated)
     {
         foreach (var link in menus)

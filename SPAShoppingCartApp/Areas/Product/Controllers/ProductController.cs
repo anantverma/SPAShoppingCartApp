@@ -8,14 +8,34 @@ namespace SPAShoppingCartApp.Areas.Product.Controllers
 {
     public class ProductController : Controller
     {
+        List<Models.Product> products;
         public ActionResult Index()
         {
             return View();
         }
 
-        public SPAShoppingCartApp.Areas.Product.Models.Product Product(int productId)
+        private List<Models.Product> getProducts()
         {
-            return new Models.Product { CategoryId = 1, ProductId = 1, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null };
+            products = new List<Models.Product>();
+            products.Add(new Models.Product { CategoryId = 1, ProductId = 1, ProductPrice = 1000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
+            products.Add(new Models.Product { CategoryId = 1, ProductId = 2, ProductPrice = 2000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
+            products.Add(new Models.Product { CategoryId = 1, ProductId = 3, ProductPrice = 3000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
+            products.Add(new Models.Product { CategoryId = 1, ProductId = 4, ProductPrice = 4000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
+            products.Add(new Models.Product { CategoryId = 1, ProductId = 5, ProductPrice = 5000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
+            products.Add(new Models.Product { CategoryId = 1, ProductId = 6, ProductPrice = 6000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
+            return products;
+        }
+
+        public ActionResult GetProducts()
+        {
+            getProducts();
+            return View("GetProducts", products);
+        }
+
+        public ActionResult ProductDetails(int id)
+        {
+            Models.Product product = getProducts().Where(t => t.ProductId == id).FirstOrDefault();
+            return View("ProductDetails", product);
         }
 
     }

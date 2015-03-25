@@ -21,9 +21,46 @@ namespace SPAShoppingCartApp.Areas.ShoppingCart.Controllers
             CartItems.Add(new CartItem { CartId = 1, ProductId = 5, ProductCode = "10005", ProductQuantity = 1, ProductImageSrc = "~/Images/accent.png", ProductName = "Product5", ProductPrice = "5000" });
             return CartItems;
         }
+
+        private CartItem CheckIfProductExistsInCart(int productId)
+        {
+            var existingCartItem = (from c in GetCartItemsFromSession()
+                          where c.ProductId == productId
+                          select c).FirstOrDefault();
+            return existingCartItem;
+        }
+
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult AddProductToCart(int productId, int quantity)
+        {
+            var ProductToBeAdded = CheckIfProductExistsInCart(productId);
+            List<CartItem> OldCartItems = GetCartItemsFromSession();
+            if (ProductToBeAdded == null)
+            {
+                OldCartItems.Add(new CartItem { CartId = 1, ProductId = 1, ProductCode = "10001", ProductQuantity = quantity, ProductImageSrc = "~/Images/accent.png", ProductName = "Product1", ProductPrice = "1000" });
+            }
+            else
+            {
+                OldCartItems.Find(c=> c.ProductId == ProductToBeAdded.ProductId).ProductQuantity += quantity;
+            }
+            Session["Cart"] = OldCartItems;
+            return View("Cart", OldCartItems);
+        }
+
+        private List<CartItem> GetCartItemsFromSession()
+        {
+            List<CartItem> OldCartItems;
+            if (Session["Cart"] == null)
+            {
+                GetCartItems();
+                Session["Cart"] = CartItems;
+            }
+            OldCartItems = (List<CartItem>)Session["Cart"];
+            return OldCartItems;
         }
 
         public ActionResult Cart()

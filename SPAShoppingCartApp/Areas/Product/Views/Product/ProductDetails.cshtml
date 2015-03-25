@@ -44,7 +44,7 @@
                 <p align="center">
                     <input type="hidden" name="id" value="modem1">
                     <input type="hidden" name="mode" value="add">
-                    <input type="button" value="Add to cart" class="buybutton detailbuybutton" onclick="ajaxaddcart(0)">
+                    @Html.ActionLink("Add To Cart", "AddProductToCart", "ShoppingCart", new { area = "ShoppingCart", productId = Model.ProductId, quantity = "2" }, htmlAttributes: new { @class = "username", title = "Manage" })
                 </p>
                 <p class="pagenums" align="center">
                     <a class="ectlink emailfriend" rel="nofollow" href="javascript:openEFWindow('modem1',false)"><strong><span style="vertical-align: text-bottom">

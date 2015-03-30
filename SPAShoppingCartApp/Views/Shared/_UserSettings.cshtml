@@ -4,7 +4,7 @@
     Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: new { area = "" }, htmlAttributes: new { @class = "username", title = "Manage" })
     </text>
 }
-@Html.ActionLink("Cart(0)", "Cart", "ShoppingCart", routeValues: new { area = "ShoppingCart" }, htmlAttributes: new { @class = "username", title = "Cart" })
+@{Html.RenderAction("CartSummary", "ShoppingCart", new { area = "ShoppingCart" });}
 @if (Request.IsAuthenticated)
 {
     <text>
@@ -12,6 +12,16 @@
     {
         @Html.AntiForgeryToken()
         <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+    }
+    </text>
+}
+else
+{
+    <text>
+    @using (Html.BeginForm("Login", "Account", new { area = "" }, FormMethod.Post, new { id = "logoutForm" }))
+    {
+        @Html.AntiForgeryToken()
+        <a href="javascript:document.getElementById('logoutForm').submit()">Login</a>
     }
     </text>
 }

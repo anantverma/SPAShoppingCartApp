@@ -52,6 +52,11 @@ namespace SPAShoppingCartApp.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public ActionResult Login()
+        {
+            return RedirectToAction("Index", "Home");
+        }
+
         //
         // POST: /Account/JsonRegister
         [HttpPost]

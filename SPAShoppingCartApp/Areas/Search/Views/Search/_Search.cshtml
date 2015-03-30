@@ -1,12 +1,13 @@
-﻿@if (HttpContext.Current.User.Identity.IsAuthenticated)
-{
+﻿@{
+        
     var categories = ViewBag.Categories;
     using (Html.BeginForm("Search", "Search", routeValues: new { area = "Search" }))
     {
     <text>
     Select: @Html.DropDownList("categories", "All")
-            @Html.TextBox("SearchBox")
-            <input type="submit" value="Search" />
+    @Html.TextBox("SearchBox")
+    <input type="submit" value="Search" />
     </text>
     }
+
 }

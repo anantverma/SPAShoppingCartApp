@@ -14,7 +14,7 @@ namespace SPAShoppingCartApp.Areas.Product.Controllers
             return View();
         }
 
-        private List<Models.Product> getProducts()
+        private void getProducts()
         {
             products = new List<Models.Product>();
             products.Add(new Models.Product { CategoryId = 1, ProductId = 1, ProductPrice = 1000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
@@ -23,7 +23,6 @@ namespace SPAShoppingCartApp.Areas.Product.Controllers
             products.Add(new Models.Product { CategoryId = 1, ProductId = 4, ProductPrice = 4000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
             products.Add(new Models.Product { CategoryId = 1, ProductId = 5, ProductPrice = 5000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
             products.Add(new Models.Product { CategoryId = 1, ProductId = 6, ProductPrice = 6000, ProductName = "Bata Shoes", ProductDescription = "Comfortable shoes.", ProductImage = null });
-            return products;
         }
 
         public ActionResult GetProducts()
@@ -34,7 +33,8 @@ namespace SPAShoppingCartApp.Areas.Product.Controllers
 
         public ActionResult ProductDetails(int id)
         {
-            Models.Product product = getProducts().Where(t => t.ProductId == id).FirstOrDefault();
+            getProducts();
+            Models.Product product = products.Where(t => t.ProductId == id).FirstOrDefault();
             return View("ProductDetails", product);
         }
 

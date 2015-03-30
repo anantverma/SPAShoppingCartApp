@@ -200,6 +200,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Areas\Product\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Product\Controllers\FilterController.cs" />
+    <Compile Include="Areas\Product\Models\SearchFilter.cs" />
     <Compile Include="Areas\Product\Models\Product.cs" />
     <Compile Include="Areas\Product\Models\ProductCategory.cs" />
     <Compile Include="Areas\Product\ProductAreaRegistration.cs" />
@@ -303,6 +305,8 @@
     <Content Include="Areas\Search\Views\Search\_Search.cshtml" />
     <Content Include="Areas\Product\Views\Product\GetProducts.cshtml" />
     <Content Include="Areas\Product\Views\Product\ProductDetails.cshtml" />
+    <Content Include="Areas\Product\Views\Filter\Filter.cshtml" />
+    <Content Include="Areas\ShoppingCart\Views\ShoppingCart\CartSummary.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\quantarrowd.png" />
     <Content Include="Images\quantarrowu.png" />
@@ -320,6 +324,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Product\Filters-accordian.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

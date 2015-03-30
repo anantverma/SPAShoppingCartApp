@@ -53,6 +53,7 @@ header {
 }
 
 #search {
+    width:100%;
     float:left;
 }
 
@@ -61,7 +62,16 @@ header {
     font-size: 1.0em;
 }
 
+#search input[type=text] {
+    width:60%;
+}
+
+#search select {
+    width:20%;
+}
+
 #menu {
+    width:100%;
     float: left;
     list-style-type: none;
     padding: 0;
